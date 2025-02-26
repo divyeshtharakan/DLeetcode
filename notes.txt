@@ -1,0 +1,37 @@
+graph : has vertices
+undirected and directed graph
+adjacency list is defined as a list with 1s and 0s and where edges if connected is defined as 1 else 0
+
+
+adjacency matrix : connected edges from a particular vertex
+0-> [1,4,5]
+1-> [0,2] etc........
+
+consider any one 
+create edge for matrix:
+addedge(v,u):
+a[v][u]=1
+a[u][v]=1
+
+
+adjacency list :
+addedge(v,u):
+adjlist[v].append(u)
+adjlist[u].append(v)
+
+bfs :
+level order traversal
+same level nodes
+
+dfs:
+take a node and then its adjacent node
+
+prims algorithm : greedy algorithm to find the mst of a weighted, connected and undirected graph
+start with any node (0)
+mark the node as visited and add it to mst
+find the smallest edge connecting any visited node to an unvisited node
+add the smallest edge to the mst and mark the new node as visited
+repeat steps 3 and 4 until all vertices are included in the mst
+
+
+
